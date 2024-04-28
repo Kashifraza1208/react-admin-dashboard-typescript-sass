@@ -13,7 +13,7 @@ const ProductManagement = () => {
   const [nameUpdate, setNameUpdate] = useState<string>(name);
   const [priceUpdate, setPriceUpdate] = useState<number>(price);
   const [stockUpdate, setStockUpdate] = useState<number>(stock);
-  const [photoUpdate, setPhotoUpdate] = useState<string>(photo);
+  const [photoUpdate] = useState<string>(photo);
 
   const changeImageHandler = (e: ChangeEvent<HTMLInputElement>) => {
     const file: File | undefined = e.target.files?.[0];
