@@ -63,9 +63,9 @@ const Dashboard = () => {
           <div className="dashboard-categories">
             <h2>Inventory</h2>
             <div>
-              {data.categories.map((i, index) => (
+              {data.categories.map((i) => (
                 <CategoryItem
-                  key={index}
+                  key={i.heading}
                   heading={i.heading}
                   value={i.value}
                   color={`hsl(${i.value * 4} , ${i.value}% ,50% )`}
